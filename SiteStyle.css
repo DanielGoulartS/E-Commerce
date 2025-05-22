@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap');
+
+:root {
+    --bg-color: linear-gradient(rgb(68, 68, 68), rgb(219, 219, 219));
+    --color1: rgb(53, 37, 37);
+    --color2: rgb(141, 51, 51);
+    --color3: rgb(22, 22, 22);
+    --fontColor1: rgb(209, 209, 209);
+    --fontColor2: rgb(0, 0, 0);
+    --fontColor3: rgb(68, 4, 4);
+    --fontColor4: rgb(226, 208, 42);
+    --scrollpanelColor: rgba(187, 187, 187, 0.973);
+    --cartsWareContainerColor: rgb(85, 85, 85);
+    --fontTitle: "Julius Sans One", sans-serif;
+    --fontBody: Verdana ;
+}
+
+* {
+    border-radius: 5px;
+}
+
+body {
+    background: var(--bg-color);
+    margin: 0px;
+}
+
+.logoTitle {
+    display: flex;
+    align-items: flex-start;
+}
+
+.logoTitle>p {
+    padding: 2px;
+    font-size: 3em;
+}
+
+
+
+
+
+body>.pageSection, body>h2 {
+    margin: 2%;
+    border-radius: 0%;
+}
+
+#pageSection1 {
+    z-index: 2;
+    top: 0px;
+    width: 100%;
+    height: 4em;
+    margin: 0px;
+    position: fixed;
+    background: var(--color1);
+}
+
+#pageSection2 {
+    margin-top: 5em;
+    margin-bottom: 0px;
+}
+
+#pageSection3 {
+    text-align: center;
+}
+
+#pageSection3>h2 {
+    text-align: start;
+}
+
+#pageSection5 {
+    text-align: center;
+    width: 100%;
+    margin: 0px;
+    background: var(--color1);
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+
+.popUpBlockerPanel {
+    z-index: 3;
+}
+
+
+
+
+
+#Img1 {
+    right: 0px;
+    position: absolute;
+    margin-top: -1em;
+    z-index:-3;
+    max-width: 50%;
+    max-height: 50%;
+    max-height: 120%;
+    -webkit-clip-path:polygon(0% 0%, 100% 0%, 100% 100%, 100% 100%);
+    clip-path:polyagon(0% 0%, 100% 0%, 100% 100%, 100% 100%);
+}
+
+.pageSection>img,
+a>img {
+    width: 5em;
+}
+
+#pageSection2>article>p {
+    text-align: start;
+    width: 50%;
+}
+
+video {
+    max-width: 70%;
+}
+
+
+
+
+
+
+h2,
+a,
+a>p {
+    line-height: 1.4em;
+    text-decoration: none;
+    font-family: var(--fontTitle);
+    color: var(--fontColor1);
+    text-shadow:
+        -1px -1px 0 var(--fontColor3),
+        1px -1px 0 var(--fontColor3),
+        -1px 1px 0 var(--fontColor3),
+        1px 1px 0 var(--fontColor3);
+    margin: 0px;
+}
+
+p {
+    font-size: small;
+    font-family: var(--fontBody);
+    color: var(--fontColor3);
+}
+
+#pageSection2>article>p {
+    margin-top: 1%;
+    color: var(--fontColor1);
+}
+
+@keyframes attention {
+    from {
+        background: var(--color3);
+    }
+
+    to {
+        background: rgb(133, 101, 21);
+    }
+}
+
+#message2 {
+    text-align: end;
+    background: var(--color3);
+    color: var(--fontColor4);
+    border-radius: 0px;
+    animation: attention 3s linear infinite alternate;
+}
+
+
+
+
+
+.sliderContainer>input,
+.wareContainer>input {
+    background: var(--color1);
+    color: var(--fontColor1);
+    border: none;
+    margin: 1%;
+}
+
+.sliderContainer>input {
+    max-width: 48%;
+}
+
+.wareContainer>p {
+    margin-top: 10px;
+}
+
+.scrollPanel {
+    background: var(--scrollpanelColor);
+    border-radius: 0px;
+}
+
+.cartsWareContainer {
+    background: var(--cartsWareContainerColor);
+    border-radius: 0%;
+}
+
+.cartsWareContainer>p {
+    margin: 0px;
+    color: var(--fontColor1);
+}
+
+.cartPanel>p {
+    background: var(--color1);
+    color: var(--fontColor1);
+    font-size: large;
+    border-radius: 0%;
+}
+
+.cartPanel>input {
+    background: var(--color2);
+    color: var(--fontColor1);
+    padding: 1%;
+    margin: 1%;
+    font-size: large;
+}
+
+.cartPanel>input:hover {
+    background: var(--color1);
+}
+
+
+
+
+body::-webkit-scrollbar,
+body.example {
+    display: none;
+    /* Chrome */
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+}

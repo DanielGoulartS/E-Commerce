@@ -1,0 +1,42 @@
+:root {
+    --scrollpanelColor: rgba(0, 0, 0, 0.47);
+}
+
+.cartPanel {
+    top: 0px;
+    position: relative;
+}
+
+.scrollPanel {
+    max-height: 400px;
+    background: var(--scrollpanelColor);
+    overflow-y: auto;
+    text-align: start;
+}
+
+.wareContainer {
+    display: inline-block;
+    margin: 1%;
+    max-width: 10%;
+    min-width: 11em;
+    text-align: start;
+}
+
+.wareName {
+    height: 2em;
+    overflow: auto;
+}
+
+.cartsWareContainer {
+    padding: 1em;
+    margin: 3px;
+    background: var(--cartsWareContainerColor);
+}
+
+.cartsWareImage {
+    max-width: 5em;
+}
+
+#scriptContainer {
+    text-align: center;
+}
